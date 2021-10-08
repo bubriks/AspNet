@@ -21,8 +21,7 @@ df = pd.melt(df, value_vars=['core','framework'], var_name='Implementation', val
 # histogram
 
 def hist():
-    sns.displot(data=df, hue='Implementation',x='time (ms)',
-            kind="kde", fill=True)
+    sns.displot(data=df, hue='Implementation',x='time (ms)', fill=True)
 
 ##########################################################################
 # boxplot

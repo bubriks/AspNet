@@ -40,4 +40,10 @@ def cul():
     ax.legend_.set_bbox_to_anchor((1, 0.6))
     ax.legend_._set_loc(2)
 
-hist()
+#########################################################################
+# empirical cumulative distribution function
+
+def cdf():
+    sns.ecdfplot(data=df, x="time (ms)", hue="Implementation")
+
+cdf()
